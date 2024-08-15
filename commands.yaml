@@ -12,5 +12,5 @@ docker run -p localPort:dockerPort imageName
 
 
 to push=>
-docker build -t imageName username/repository:tag
-docker push username/repository:tag
+docker build -t username/imageName
+docker push username/imageName
