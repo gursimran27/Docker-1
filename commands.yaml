@@ -1,0 +1,16 @@
+VM has full fledge packages so its is heavy weight while docker have images so it is light weight
+
+docker version
+
+docker run -it imageName
+
+docker pull imageName
+
+docker build -t newImageName .
+
+docker run -p localPort:dockerPort imageName
+
+
+to push=>
+docker build -t imageName username/repository:tag
+docker push username/repository:tag
