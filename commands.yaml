@@ -14,3 +14,5 @@ docker run -p localPort:dockerPort imageName
 to push=>
 docker build -t username/imageName
 docker push username/imageName
+
+ docker run -it -p 4000:5000 firstimage
