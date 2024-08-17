@@ -1,5 +1,7 @@
 VM has full fledge packages so its is heavy weight while docker have images so it is light weight
 
+container is an isolated env where the image is executed analog image as OS and the container as harware
+
 docker version
 
 docker run -it imageName (interactive)
@@ -22,3 +24,14 @@ docker run -it imageName bash -> to interect with bash
 
 
 docker run -it -e PORT=8000 -p 8000:8000 firstimage
+
+
+
+there are 3 n/w that a contrainer can have bridge(port mapping requires), host(no port mapping req), none(no accesds to internet)
+
+
+volume mounting -> docker run -it -v pathToAFolder:/home/app/test imageName bash =>by this an change made inside the home/app/test will refect in the actual hardware even if the container is stoped
+
+
+in the Dockerfile -> each instruction is a layer and is also cached so we need the place the layers in such order that it is optimized
+
