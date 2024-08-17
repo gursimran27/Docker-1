@@ -1,0 +1,21 @@
+version: '1.1'
+
+services:
+  postgres:
+    image: postgres #HUB.DOCKER.COM
+    ports:
+      - '5431:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: review
+      POSTGRES_PASSWORD: 1234
+
+  redis:
+   image: redis
+   ports:
+      - '6379:6379'
+
+
+
+# to run -> docker compose up
+# to delete -> docker compose down
